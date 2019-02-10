@@ -1,0 +1,522 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Alex+Brush|Roboto:300,300i,400,500,900");
+
+@media only screen and (max-width: 900px) {
+  main > header .book-title {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .main-menu > ul {
+    display: none !important;
+  }
+}
+
+:root {
+  --padding: 10vw;
+}
+
+body {
+  margin: 0;
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  color: #474242;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 18px 0;
+  font-family: "Alex Brush", cursive;
+  text-align: center;
+  color: #f755b0;
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+h2 {
+  margin: 1em 0 0;
+  text-align: center;
+  color: #474242;
+  font-weight: 100;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  font-style: italic;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > header {
+  position: relative;
+  background: url(assets/backround-top.png);
+  background-size: cover;
+  color: #fff;
+
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+main > header > .background-image {
+  height: 620px;
+  mix-blend-mode: soft-light;
+  background-size: cover;
+  background-position: 0px 20%;
+  background-image: url(assets/yoga-1665173_1920.jpg);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+main > header > div {
+  position: relative;
+}
+
+main > * {
+  padding: 0 var(--padding);
+}
+
+.depoiment-foto {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 10px solid rgba(253, 143, 235, 0.72);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 234.5px;
+}
+
+main > header .livro-topo {
+  max-height: 550px;
+  min-height: 390px;
+  height: auto;
+  max-width: 350px;
+  min-width: 250px;
+  object-fit: fill;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main > header .waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 45%;
+  width: 100%;
+}
+
+main > header > .header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-menu {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 80px 0 30px;
+}
+
+main .main-menu ul {
+  font-size: 18px;
+  display: flex;
+  margin: 0;
+}
+
+main .main-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+main .main-menu ul li a {
+  color: #fff8;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+main .main-menu ul li a:active,
+main .main-menu ul li a:hover,
+main .main-menu ul li a:focus {
+  border-bottom: solid 2px;
+  color: #fff;
+}
+
+main > header > .header-content .tipographyc-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > header > .header-content .tipographyc-title + p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+main > header > .header-content .tipographyc-title .title-number {
+  font-weight: 900;
+  font-size: 164px;
+  letter-spacing: -25px;
+  color: #ff008a;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main > header > .header-content .tipographyc-title .title {
+  font-weight: 500;
+  line-height: 51px;
+  font-size: 64px;
+  color: #fff;
+}
+
+main > header > .header-content section {
+  display: flex;
+  align-items: flex-end;
+  color: #474242;
+  height: 612px;
+}
+
+main > header > .header-content section > .page-entrace {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 2;
+}
+
+main > header > .header-content section > i {
+  margin: 0 10px;
+}
+
+main > header > .header-content .social-midias {
+  display: flex;
+  width: 60px;
+  height: 40px;
+  justify-content: space-around;
+}
+
+main > header > .header-content .social-midias a {
+  color: #474242;
+}
+
+main > header > .header-content .book-title {
+  flex: 1;
+}
+
+.depoiment {
+  display: flex;
+  align-items: center;
+  color: #474242;
+  flex-wrap: wrap;
+}
+
+.depoiment p {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  margin: 18px;
+  max-width: 500px;
+  min-width: 200px;
+}
+
+.depoiment > aside + div {
+  position: relative;
+  top: 25px;
+  display: flex;
+  flex: 1 1 430px;
+}
+
+.depoiment > aside + div > i {
+  margin-left: 18px;
+}
+
+.depoiment .spacer {
+  flex: 2;
+}
+
+.presentation {
+  padding: 3em var(--padding);
+}
+
+.presentation a.contact {
+  text-align: center;
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: 2em;
+  color: #f755b0;
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+
+.description {
+  margin: 0 3em 2em;
+}
+
+.description p {
+  line-height: 1.4em;
+  text-indent: 3em;
+  margin: 16px 0;
+}
+
+.depoiments {
+  padding: 2em calc(var(--padding) + 3em);
+  background: #f8f1f5;
+}
+
+.depoiments > .depoiment {
+  margin: 16px 0;
+}
+
+.depoiments > .depoiment:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.payment {
+  padding: 2em var(--padding);
+}
+
+.payment > .ofert {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 136px;
+  letter-spacing: 9px;
+  font-weight: 400;
+}
+
+.payment > .counter {
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 900;
+  font-size: 2em;
+  color: #f559af;
+}
+
+.payment > .checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.payment > .checkout > aside {
+  position: relative;
+  margin-right: -90px;
+  top: 16px;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.payment > .checkout img {
+  max-width: 360px;
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.payment > .checkout > section {
+  position: relative;
+  max-width: 641px;
+  min-width: 380px;
+  width: 100%;
+  height: 326px;
+  background: #ffadcf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  padding: 24px;
+  padding-left: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.payment > .checkout > section .price {
+  display: flex;
+  align-items: center;
+}
+
+.payment > .checkout > section .book-disclaimer {
+  font-size: 0.6em;
+  font-weight: 500;
+}
+
+.payment > .checkout > section .sifra {
+  font-weight: 900;
+  font-size: 144px;
+  letter-spacing: -0.09em;
+  color: #ff008a;
+}
+
+.payment > .checkout > section .sifra + div {
+  color: #fff;
+  margin-left: 0.7em;
+}
+
+.payment > .checkout > section .sifra + div > div {
+  font-weight: 900;
+  font-size: 2.6em;
+  margin-bottom: 10px;
+}
+
+.payment > .checkout > section .sifra + div > p {
+  font-size: 60%;
+  opacity: 0.7;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.payment > .checkout > section > footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment > .checkout > section > .tag {
+  position: absolute;
+  width: 177px;
+  height: 39px;
+  background: #f35cae;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px 3px 0px 3px;
+  font-size: 12px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -12px;
+  top: 13px;
+}
+
+.payment > .checkout > section > .tag > span {
+  font-size: 1.8em;
+  margin-right: 8px;
+}
+
+.payment > .checkout > section > .tag:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #d34c9e;
+  right: 4px;
+  bottom: -8px;
+  transform: rotateZ(45deg);
+  z-index: -1;
+}
+
+.payment > .checkout > section > footer > div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 2;
+  color: #fff;
+  text-shadow: #ff0089 0px 1px 1px;
+}
+
+.payment > .checkout > section > footer > div i {
+  margin-right: calc(5px + 2vw);
+}
+
+.payment > .checkout > section > footer > button {
+  background: #98bc8b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 15px;
+  font-weight: 900;
+  font-size: 0.6em;
+  flex: 1;
+  color: #ffffff;
+  border: none;
+}
+
+.payment > .checkout > section > footer > button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.payment > .checkout > section > footer > button:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  padding: 19px 15px 11px;
+}
+
+.payment > .checkout > section > footer > button:focus {
+  outline: none;
+}
+
+main > footer {
+  background: #a8294d;
+  padding: 2em var(--padding);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+main > footer > section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 250px;
+  height: auto;
+  margin: 0 2em;
+}
+
+main > footer > section:not(:last-of-type) {
+  border-right: dashed 1px rgba(255, 255, 255, 0.31);
+}
+
+
+main > footer > section a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+  font-size: 0.56em;
+}
+
+main > footer > section > div {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.6em;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 1.5em;
+}
+
+main > footer > section > .menu-social {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+main > footer > section > .copyright {
+  font-size: 0.45em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+main > footer > section > .copyright a {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+main > footer > section > .menu-social a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > footer > section > .menu-social a > i {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+main > footer > section > .menu-social a > i + span {
+  font-size: 0.9em;
+  margin-top: 6px;
+}
