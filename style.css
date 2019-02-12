@@ -1,7 +1,7 @@
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css?family=Alex+Brush|Roboto:300,300i,400,500,900");
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 930px) {
   main > header .book-title {
     display: none !important;
   }
@@ -105,7 +105,6 @@ main > header .livro-topo {
   min-width: 250px;
   object-fit: fill;
   width: 100%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 main > header .waves {
@@ -200,9 +199,10 @@ main > header > .header-content section > i {
 
 main > header > .header-content .social-midias {
   display: flex;
-  width: 60px;
+  width: 80px;
   height: 40px;
   justify-content: space-around;
+  padding: 0 8px;
 }
 
 main > header > .header-content .social-midias a {
@@ -211,7 +211,44 @@ main > header > .header-content .social-midias a {
 
 main > header > .header-content .book-title {
   flex: 1;
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: start;
+  max-width: fit-content;
+  min-width: 250px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+main > header > .header-content .book-title:hover button {
+  bottom: 0px;
+}
+
+main > header > .header-content .book-title button {
+  position: absolute;
+  bottom: -90px;
+  width: 100%;
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6em;
+  letter-spacing: 2px;
+  color: #fff;
+  border: none;
+  background: #0003;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+main > header > .header-content .book-title button:hover {
+  font-size: 0.8em;
+}
+
+main > header > .header-content .book-title button:active, 
+main > header > .header-content .book-title button:focus {
+  outline: none;
+} 
 
 .depoiment {
   display: flex;
@@ -270,12 +307,17 @@ main > header > .header-content .book-title {
 }
 
 .depoiments {
-  padding: 2em calc(var(--padding) + 3em);
+  padding: 2em var(--padding);
   background: #f8f1f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .depoiments > .depoiment {
   margin: 16px 0;
+  max-width: 1090px;
+  width: 100%;
 }
 
 .depoiments > .depoiment:nth-child(odd) {
@@ -309,12 +351,21 @@ main > header > .header-content .book-title {
   margin: 2em 0;
 }
 
+.payment > .checkout > * {
+  transition: 0.5s all ease;
+}
+
 .payment > .checkout > aside {
   position: relative;
   margin-right: -90px;
   top: 16px;
   align-self: flex-end;
   z-index: 1;
+}
+
+.checkout:hover > aside {
+  transform: scale(1.2) translateX(-20px);
+  transform-origin: center;
 }
 
 .payment > .checkout img {
@@ -472,6 +523,9 @@ main > footer > section:not(:last-of-type) {
   border-right: dashed 1px rgba(255, 255, 255, 0.31);
 }
 
+main > footer > section a:hover {
+  color: #fff;
+}
 
 main > footer > section a {
   text-decoration: none;

@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>14 Dias Para Mudar Sua Vida</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=0.6" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>14 Dias Para Mudar Sua Vida</title>
+    <meta property="og:image" content="assets/capa.jpg" />
+    <meta property="og:site_name" content="14 Dias Para Mudar Sua Vida" />
+    <meta
+      property="og:url"
+      content="https://eliza-bethgomes.github.io/14diasparamudar/"
+    />
+    <meta
+      property="og:description"
+      content="Pare e pense em como você esta se saindo, está mesmo chegando aos resultados que espera? Talvez as mudanças que você procura estejam batendo a sua porta todo esse tempo e você não tem dado a ela a devida atenção."
+    />
+    <link rel="icon" type="image/x-icon" href="assets/capa.jpg" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
@@ -21,9 +32,19 @@
         <div class="header-content">
           <nav class="main-menu">
             <ul>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#depoimentos">Depoimentos</a></li>
-              <li><a href="#mude_agora">Mude Agora</a></li>
+              <li>
+                <a href="#" onclick="_scrollViewTo('#sobre')(event)">Sobre</a>
+              </li>
+              <li>
+                <a href="#" onclick="_scrollViewTo('#depoimentos')(event)"
+                  >Depoimentos</a
+                >
+              </li>
+              <li>
+                <a href="#" onclick="_scrollViewTo('#mude_agora')(event)"
+                  >Mude Agora</a
+                >
+              </li>
               <li>
                 <a href="mailto://bethlisboa.contato@gmail.com">Contato</a>
               </li>
@@ -70,11 +91,18 @@
               </article>
             </div>
             <div class="social-midias">
-              <a href="https://www.facebook.com/14-dias-para-mudar-sua-vida-804096403264791/" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a
+                href="https://www.facebook.com/14-dias-para-mudar-sua-vida-804096403264791/"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
             <aside class="book-title">
               <img class="livro-topo" src="assets/capa.jpg" />
+              <button onclick="_scrollViewTo('#mude_agora')(event)">
+                Mude Sua Vida Agora
+              </button>
             </aside>
           </section>
         </div>
@@ -132,20 +160,19 @@
       </section>
       <section class="depoiments" id="depoimentos">
         <h1>Depoimentos</h1>
+
         <article class="depoiment">
           <aside>
             <img
               class="depoiment-foto"
-              src="assets/sunglasses-635269_1920.jpg"
+              src="https://hotmart.s3.amazonaws.com/checkout_custom/29780891-5795-4394-8b62-88d88d009ca7/a8g068yz.jpeg"
             />
           </aside>
           <div>
             <i class="fas fa-quote-left"></i>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              hic sit quibusdam tenetur mollitia. Debitis quibusdam soluta
-              cumque? Sapiente possimus, deleniti neque in non nesciunt sit
-              ducimus qui cupiditate fugit...
+              Foi um presente. Segui alguns passos que achei que seriam bons
+              para mim. Gostei muito...
             </p>
           </div>
           <div class="spacer"></div>
@@ -155,35 +182,14 @@
           <aside>
             <img
               class="depoiment-foto"
-              src="assets/sunglasses-635269_1920.jpg"
+              src="https://hotmart.s3.amazonaws.com/checkout_custom/3504da51-4fa9-439b-a56f-17e984265152/10cjjzgr.jpeg"
             />
           </aside>
           <div>
             <i class="fas fa-quote-left"></i>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              hic sit quibusdam tenetur mollitia. Debitis quibusdam soluta
-              cumque? Sapiente possimus, deleniti neque in non nesciunt sit
-              ducimus qui cupiditate fugit...
-            </p>
-          </div>
-          <div class="spacer"></div>
-        </article>
-
-        <article class="depoiment">
-          <aside>
-            <img
-              class="depoiment-foto"
-              src="assets/sunglasses-635269_1920.jpg"
-            />
-          </aside>
-          <div>
-            <i class="fas fa-quote-left"></i>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              hic sit quibusdam tenetur mollitia. Debitis quibusdam soluta
-              cumque? Sapiente possimus, deleniti neque in non nesciunt sit
-              ducimus qui cupiditate fugit...
+              Comprei para minha esposa, mas percebi que se encaixava em minhas
+              necessidades também. Estamos no 5º dia e estamos empenhados...
             </p>
           </div>
           <div class="spacer"></div>
@@ -217,7 +223,7 @@
         </div>
         <div class="ofert">Esta oferta acaba em</div>
         <div class="counter">
-          30 dias - 11 : 29 : 00
+          <!-- 30 dias - 11 : 29 : 00 -->
         </div>
         <div class="checkout">
           <aside>
@@ -234,8 +240,8 @@
               <div class="price">
                 <aside class="sifra">R$</aside>
                 <div>
-                  <div>60,00</div>
-                  <p>6 x 10,89 no cartão</p>
+                  <div>35,00</div>
+                  <p>2 x 18,16 no cartão</p>
                 </div>
               </div>
               <span class="book-disclaimer"
@@ -244,13 +250,13 @@
             </div>
             <footer>
               <div>
-                <i class="fas fa-credit-card"></i>
+                <!-- <i class="fas fa-credit-card"></i>
                 <i class="fab fa-cc-paypal"></i>
                 <i class="fas fa-barcode"></i>
-                <i class="fas fa-exchange-alt"></i>
+                <i class="fas fa-exchange-alt"></i> -->
               </div>
               <button
-                onclick="window.open('https://pay.hotmart.com/J11025572A?checkoutMode=0&bid=1549840008163', '_blank')"
+                onclick="window.open('https://pay.hotmart.com/J11025572A', '_blank')"
               >
                 <i class="fas fa-shopping-cart"></i> Comprar
               </button>
@@ -263,10 +269,22 @@
           <div>Navegação</div>
           <nav class="menu-footer">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#depoimentos">Depoimentos</a></li>
-              <li><a href="#mude_agora">Mude Agora</a></li>
+              <li>
+                <a href="" onclick="_scrollViewTo('#home')(event)">Home</a>
+              </li>
+              <li>
+                <a href="" onclick="_scrollViewTo('#sobre')(event)">Sobre</a>
+              </li>
+              <li>
+                <a href="" onclick="_scrollViewTo('#depoimentos')(event)"
+                  >Depoimentos</a
+                >
+              </li>
+              <li>
+                <a href="" onclick="_scrollViewTo('#mude_agora')(event)"
+                  >Mude Agora</a
+                >
+              </li>
               <li>
                 <a href="mailto://bethlisboa.contato@gmail.com">Contato</a>
               </li>
@@ -282,7 +300,10 @@
         </section>
         <section>
           <nav class="menu-social">
-            <a href="https://www.facebook.com/14-dias-para-mudar-sua-vida-804096403264791/" target="_blank">
+            <a
+              href="https://www.facebook.com/14-dias-para-mudar-sua-vida-804096403264791/"
+              target="_blank"
+            >
               <i class="fab fa-facebook"></i>
               <span>Facebook</span>
             </a>
@@ -307,5 +328,59 @@
         </section>
       </footer>
     </main>
+    <script>
+      const lpad = fill => digits => value =>
+        new Array(value.length > digits ? 0 : digits - value.length).fill(
+          fill
+        ) + value;
+      const pipe = (a, ...b) => i => (a ? pipe(...b)(a(i)) : i);
+
+      const _scrollViewTo = id => event => {
+        event.preventDefault();
+        document.querySelector(id).scrollIntoView({
+          block: "start",
+          behavior: "smooth"
+        });
+      };
+
+      const counter = () => {
+        const date = new Date();
+        const nextMonth = new Date();
+        nextMonth.setMonth(nextMonth.getMonth() + 1);
+        nextMonth.setDate(1);
+        nextMonth.setHours(0);
+        nextMonth.setMinutes(0);
+        nextMonth.setSeconds(0);
+        nextMonth.setMilliseconds(0);
+
+        return nextMonth - date;
+      };
+
+      const zeroFill2digits = lpad("0")(2);
+
+      const timeFormat = pipe(
+        parseInt,
+        a => a.toString(),
+        zeroFill2digits
+      );
+
+      const toDate = pipe(
+        a => a / 1000,
+        a => [a / 60, timeFormat(`${a % 60}`)],
+        ([a, b]) => [a / 60, `${timeFormat(`${a % 60}`)} : ${b}`],
+        ([a, b]) => [a / 24, `${timeFormat(`${a % 24}`)} : ${b}`],
+        ([a, b]) => `${timeFormat(`${a}`)} dias - ${b}`
+      );
+
+      const counterDiv = document.querySelector(".counter");
+      const updateTimer = pipe(
+        counter,
+        toDate,
+        a => (counterDiv.innerText = a)
+      );
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    </script>
   </body>
 </html>
