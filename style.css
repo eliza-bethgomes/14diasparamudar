@@ -284,6 +284,12 @@ main > header > .header-content .book-title button:focus {
 
 .presentation {
   padding: 3em var(--padding);
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation > .fb-share {
+  align-self: flex-end;
 }
 
 .presentation a.contact {
